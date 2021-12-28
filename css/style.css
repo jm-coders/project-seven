@@ -1,0 +1,60 @@
+/*====================================== Common CSS ======================================*/
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 16px;
+    line-height: 1.6;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+/*=================================== NAVITION AREA ==================================*/
+nav{
+    background: #000;
+    color: #fff;
+    display: grid;
+    justify-content: space-between;
+    grid-template-areas:
+    "logo nav"
+    ;
+
+}
+nav .logo{
+    grid-area: logo;
+}
+nav .logo h2{
+    font-size: 28px;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+}
+nav .logo h2 .big{
+    font-size: 40px;
+    color: #97BDAB;
+}
+nav .min_menu{
+    grid-area: nav;
+}
+
+
+
+
+
+
+/*=============================== Header area ==================================*/
+
+
+
+
