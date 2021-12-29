@@ -13,25 +13,96 @@
 </head>
 <body>
 <nav>
-    <div class="logo">
-        <h2> <span class="big">C</span>hill<span class="big">A</span>id</h2>
-    </div>
-    <div class="min_menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Dropdown</a></li>
-            <li><a href="#">Link Text</a></li>
-            <li><a href="#">Link Text</a></li>
-            <li><a href="#">Link Text</a></li>
-            <li><a href="#">Link Text</a></li>
-            <li><a href="#">Link Text</a></li>
-            <li><a href="#">Link Text</a></li>
-        </ul>
+    <div class="container inner_nav">
+        <div class="logo">
+            <h2> <span class="big">C</span>hill<span class="big">A</span>id</h2>
+        </div>
+        <div class="min_menu">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#"><i class="fas fa-caret-down"></i>pages</a>
+                    <ul>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Full width</a></li>
+                        <li><a href="#">Sidebar left</a></li>
+                        <li><a href="#">Sidebar Right</a></li>
+                        <li><a href="#">Basic Grid</a></li>
+                        <li><a href="#">Fonts Icons</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fas fa-caret-down"></i>Dropdown</a>
+                    <ul>
+                        <li><a href="">level 2</a></li>
+                        <li><a href="">level 2 + Drop</a>
+                            <ul>
+                                <li><a href="#">Level 3</a></li>
+                                <li><a href="#">Level 3</a></li>
+                                <li><a href="#">Level 3</a></li>
+                                <li><a href="#">Level 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">level 2</a></li>
+                    </ul>
+                
+                </li>
+                <li><a href="#">Link Text</a></li>
+                <li><a href="#">Link Text</a></li>
+                <li><a href="#">Link Text</a></li>
+                <li><a href="#">Link Text</a></li>
+                <li><a href="#">Link Text</a></li>
+                <li><a href="#">Link Text</a></li>
+            </ul>
+        </div>
     </div>
 </nav>
-<header id="header-area"></header>
+<!--=============================== header area ================================-->
+<header id="header-area">
+    <div class="inner_nav container">
+        <div class="hero_text_box">
+            <h1>Faucibus Porttitor Metus</h1>
+            <p>In nibh nullam egestas velit laoreet nullam elementum ipsum pharetra suscipit leo augue pretium felis nisl vitae ipsum curabitur quis libero.</p>
+            <a href="#" class="btn">TRISTIQUE VEHICULA</a>
+        </div>
+    </div>
 </header>
-
+<!--=================================== Introblocks Area ===================================-->
+<section id="introblocks">
+    <div class="inner_introblocks container">
+        <div class="child_introblocks fast">
+            <i class="fas fa-hand-rock"></i>
+            <h3>Feugiat Fermentum</h3>
+            <p>Ac orci proin porttitor lacus eget mi pellentesque non.</p>
+        </div>
+        <div class="child_introblocks two">
+            <i class="fas fa-dove"></i>
+            <h3>Malesuada Accumsan</h3>
+            <p>Sapien sed metus congue sodales vivamus scelerisque.</p>
+        </div>
+        <div class="child_introblocks three">
+            <i class="fas fa-history"></i>
+            <h3>Mauris Placerat</h3>
+            <p>Et interdum vulputate purus nisl fringilla sapien quis.</p>
+        </div>
+        <div class="child_introblocks four">
+            <i class="fas fa-heartbeat"></i>
+            <h3>Elementum Rhoncus</h3>
+            <p>Sollicitudin dui mauris dui nunc lorem tortor pharetra.</p>
+        </div>
+    </div>
+</section>
+<!--=================================== Blogs area ===================================-->
+<section id="blogs_area">
+    <div class="inner_blogs container">
+        <div class="child_blogs">
+            <img src="img/01.jpg" alt="Bycicyl images">
+            <p>Accumsan Placerat</p>
+        </div>
+        <div class="child_blogs">
+            <img src="img/02.jpg" alt="Bycicyl images">
+            <p>Scelerisque Etiam</p>
+        </div>
+    </div>
+</section>
 
 <!--`=========================== JS FILS ============================-->
 <script src="js/html5shiv.min.js"></script>
