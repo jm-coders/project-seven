@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animated_circle.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Project Seven</title>
@@ -45,8 +46,8 @@
                     </ul>
                 
                 </li>
-                <li><a href="#">Link Text</a></li>
-                <li><a href="#">Link Text</a></li>
+                <li><a href="#blogs_area">blogs</a></li>
+                <li><a href="#service_area">SERVICE</a></li>
                 <li><a href="#">Link Text</a></li>
                 <li><a href="#">Link Text</a></li>
                 <li><a href="#">Link Text</a></li>
@@ -57,7 +58,7 @@
 </nav>
 <!--=============================== header area ================================-->
 <header id="header-area">
-    <div class="inner_nav container">
+    <div class="inner_header container">
         <div class="hero_text_box">
             <h1>Faucibus Porttitor Metus</h1>
             <p>In nibh nullam egestas velit laoreet nullam elementum ipsum pharetra suscipit leo augue pretium felis nisl vitae ipsum curabitur quis libero.</p>
@@ -95,19 +96,102 @@
     <div class="inner_blogs container">
         <div class="child_blogs">
             <img src="img/01.jpg" alt="Bycicyl images">
-            <p>Accumsan Placerat</p>
+            <a href="#">Accumsan Placerat</a><i class="fas fa-angle-right"></i>
         </div>
         <div class="child_blogs">
             <img src="img/02.jpg" alt="Bycicyl images">
-            <p>Scelerisque Etiam</p>
+            <a href="#">Sceler isque Etiam</a><i class="fas fa-angle-right"></i>
+        </div>
+    </div>
+</section>
+<!--=================================== Service area ================================-->
+<section id="service_area">
+    <div class="container">
+        <p class="short_heading">Quis leo hendrerit lectus morbi</p>
+        <h2>Justo Mauris Tempus Pharetra</h2>
+    </div>
+    <div class="container inner_service">
+        <div class="child_service">
+            <i class="fas fa-hourglass-half"></i>
+            <h3>Sociis Natoque Penatibus</h3>
+            <p>Interdum at congue semper purus nullam quis odio id justo accumsan ullamcorper maecenas vel arcu nulla tincidunt elit ornare.</p>
+        </div>
+        <div class="child_service">
+            <i class="fas fa-paw"></i>
+            <h3>Magnis Parturient Montes</h3>
+            <p>Urna proin venenatis eros viverra ultrices fringilla lectus urna consequat erat eget scelerisque ligula felis nec neque nam.</p>
+        </div>
+        <div class="child_service">
+            <i class="fas fa-sliders-h"></i>
+            <h3>Nascetur Ridiculus Aenean</h3>
+            <p>Vitae ipsum vitae velit porttitor aliquam in quam aliquam ullamcorper sem a auctor dapibus nisi nunc vehicula nunc quis mattis.</p>
+        </div>
+        <div class="child_service">
+            <i class="fas fa-tty"></i>
+            <h3>Ullamcorper Neque Phasellus</h3>
+            <p>Pede turpis at elit nunc at urna sed ligula vivamus vel erat at diam imperdiet pharetra quisque justo turpis mattis ut vitae.</p>
+        </div>
+        <div class="child_service">
+            <i class="fas fa-table"></i>
+            <h3>Aliquet Lacus Nulla Erat</h3>
+            <p>Tortor aenean leo ipsum elementum non cursus eu interdum ut risus proin risus nibh viverra eget lobortis feugiat egestas in nisl.</p>
+        </div>
+        <div class="child_service">
+            <i class="fas fa-hand-holding-usd"></i>
+            <h3>Aliquam Volutpat Curabitur</h3>
+            <p>Fusce dignissim neque vitae justo aenean ac urna et leo posuere pretium nunc bibendum enim quis imperdiet elementum dui dolor.</p>
+        </div>
+    </div>
+</section>
+<!--===================================== about area ======================================-->
+<section id="about_area">
+    <div class="container">
+        <p class="short_heading">Rutrum erat nec mollis augue mauris</p>
+        <h2>Ac Pede Phasellus Commodo</h2>
+    </div>
+    <div class="container four_flex">
+        <div class="box">
+            <svg class="radial-progress web_design" data-percentage="25" viewBox="0 0 80 80">
+                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">25%</text>
+            </svg>
+            <h4>PORTTITOR</h4>
+        </div>
+        <div class="box">
+            <svg class="radial-progress html_css" data-percentage="50" viewBox="0 0 80 80">
+                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">50%</text>
+            </svg>
+            <h4>CONDIMENTUM</h4>
+        </div>
+        <div class="box">
+            <svg class="radial-progress graphic_design" data-percentage="75" viewBox="0 0 80 80">
+                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">75%</text>
+            </svg>
+            <h4>SOLLICITUDIN</h4>
+        </div>
+        <div class="box">
+            <svg class="radial-progress ui_ux" data-percentage="100" viewBox="0 0 80 80">
+                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">100%</text>
+            </svg>
+            <h4>VENENATIS</h4>
         </div>
     </div>
 </section>
 
 <!--`=========================== JS FILS ============================-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/html5shiv.min.js"></script>
 <script src="js/respond.min.js"></script>
 <script src="js/selectivizr-min.js"></script>
+<script src="js/animated_circle.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

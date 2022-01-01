@@ -10,7 +10,7 @@ body{
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.6em;
 }
 img{
     width: 100%;
@@ -25,10 +25,33 @@ ul{
     margin: 0;
     padding: 0;
 }
+h2{
+    font-size: 31px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0 0 80px;
+    line-height: normal;
+    font-weight: normal;
+
+}
+h3{
+    font-size: 17px;
+    margin:0 0 15px;
+    line-height: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+section{
+    padding: 80px 0;
+}
 .container{
     width: 1140px;
     max-width: 96%;
     margin: auto;
+}
+.short_heading{
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
 }
 /*=================================== NAVITION AREA ==================================*/
 nav{
@@ -173,13 +196,16 @@ nav .min_menu ul ul ul{
 }
 /*================================ Introblocks area =================================*/
 #introblocks{
+    width: 100%;
     height: 250px;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 .inner_introblocks{
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
+    margin-top: -80px;
 
 }
 .inner_introblocks .child_introblocks{
@@ -206,11 +232,6 @@ nav .min_menu ul ul ul{
     padding-top: 19px;
     transition: all 00.5s;
     margin-bottom: 30px;
-}
-.inner_introblocks .child_introblocks h3{
-    font-size: 17px;
-    margin:0 0 15px;
-    line-height: 17px;
 }
 .inner_introblocks .child_introblocks p{
     font-size: 14px;
@@ -261,8 +282,114 @@ nav .min_menu ul ul ul{
 /*=================================== Blogs Area ================================*/
 #blogs_area{
     padding: 80px 0;
+    overflow: hidden;
 }
 .inner_blogs{
     display: flex;
     justify-content: space-between;
+}
+.child_blogs{
+    width: 47.5%;
+    position: relative;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.child_blogs:hover{
+    background: #97A9BD;
+}
+.child_blogs:hover i{
+    color: #97A9BD;
+    background: #fff;
+    cursor: pointer;
+}
+.child_blogs a{
+    margin-top: -7px;
+    padding: 10px 20px;
+    display: block;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif; 
+    transition: 00.5s;
+}
+.child_blogs i{
+    position: absolute;
+    bottom: 6px;
+    right: 14px;
+    color: #fff;
+    background: #97A9BD;
+    width: 32px ;
+    height: 32px ;
+    border-radius: 50%;
+    padding-top: 7px;
+    text-align: center;
+    font-size: 19px;
+    transition: all 00.5s;
+}
+/* =======================================Service area =========================================*/
+#service_area{
+    background: linear-gradient(rgba(151, 169, 189, 0.7),rgba(151,169,189,.7)),url(../img/background-02.jpg) center;
+    background-size: cover;
+    color: #fff;
+}
+.inner_service{
+    display: flex;
+    flex-wrap: wrap;
+    color: #333;
+    justify-content: space-between;
+}
+.child_service{
+    width: 30%;
+    height: auto;
+    padding: 30px 15px;
+    text-align: center;
+    background: #fff;
+    margin-top: 4vw;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0,.3);
+    transition: all 00.5s;
+}
+.child_service:hover{
+    color: #fff;
+    background: #97A9BD;
+}
+.child_service:hover i{
+    background-color: #fff;
+    color: #97A9BD;
+}
+.child_service i{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #97A9BD;
+    text-align: center;
+    padding-top: 18px;
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 30px;
+    transition: all 00.5s;
+    cursor: pointer;
+}
+.child_service p{
+    font-size: 14px;
+    line-height: normal;
+    margin: 0;
+}
+/*================================= About area ======================================*/
+.four_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.box{
+    width: 23%;
+}
+h4 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.container .box svg.radial-progress circle {
+    stroke-width: 4;
+    stroke: #97A9BD;
 }
