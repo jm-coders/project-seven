@@ -24,4 +24,5 @@ svg.radial-progress circle.complete {
 svg.radial-progress text {
     fill: #000;
     text-anchor: middle;
+    font-size: 8px;
 }
