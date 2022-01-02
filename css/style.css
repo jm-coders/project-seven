@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 html{
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 body{
     margin: 0;
@@ -13,6 +13,7 @@ body{
     line-height: 1.6em;
 }
 img{
+    display: block;
     width: 100%;
     height: auto;
 }
@@ -42,6 +43,11 @@ h3{
 }
 section{
     padding: 80px 0;
+}
+strong{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
 }
 .container{
     width: 1140px;
@@ -97,7 +103,7 @@ nav .min_menu ul li a{
     color: #fff;
     padding: 25px 5px;
     display: block;
-    text-transform: uppercase;
+    text-transform: capitalize;
     transition: all 00.5s;
 }
 nav .min_menu ul li a i{
@@ -303,7 +309,6 @@ nav .min_menu ul ul ul{
     cursor: pointer;
 }
 .child_blogs a{
-    margin-top: -7px;
     padding: 10px 20px;
     display: block;
     font-size: 20px;
@@ -406,17 +411,49 @@ h4 {
     width: 30%;
     border: 1px solid #D7D7D7;
 }
+.child_tem i{
+    color: #fff;
+    position: absolute;
+    font-size: 50px;
+    z-index: 5;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transition: all 00.5s;
+    transform: translate(-50%,-50%);
+}
+.child_tem .fas {
+    font-family: fantasy;
+    font-weight: 100;
+}
+.child_tem .tem_img{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.child_tem .tem_img:hover::after{
+    background: rgba(151,169,189,.5);
+}
+.child_tem .tem_img:hover i{
+    opacity: 1;
+}
+.child_tem .tem_img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    transition:all 00.5s;
+    width: 100%;
+    height: 100%;
+    background: rgba(151,169,189,);
+}
 .child_tem .caption{
     padding:15px;
-    margin-top: -8px;
 }
 .child_tem strong{
     margin-bottom: 8px;
-    font-size: 20px;
-    font-weight: 400;
     display: block;
     text-align: center;
-    line-height: normal;
 }
 .child_tem span{
     margin: 0;
@@ -424,4 +461,99 @@ h4 {
     display: block;
     font-size: 11.5px;
     line-height: normal;
+}
+/*=================================== Testimonial area ======================================*/
+#testimonial_area{
+    background: #97A9BD;
+    color: #fff;
+}
+.inner_testimonial{
+    display: flex;
+    justify-content: space-between;
+}
+.clint_area{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.clint_bio strong{
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.clint_bio span{
+    font-size: 12px;
+    display: block;
+    line-height: 1em;
+}
+.clint_bio{
+    margin: 33px 15px 0;
+}
+.clint_photo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.client_review{
+    width: 90%;
+    background: #fff;
+    color: #474747;
+    padding: 20px;
+    border-radius: 25px 0;
+    line-height: normal;
+    text-align: center;
+    position: relative;
+}
+.client_review p{
+    margin: 0;
+}
+.client_review i{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 50px;
+    line-height: 30px;
+    color: rgba(0,0,0,.1);
+}
+/*==================================== News area =========================================*/
+#news_area{
+    
+}
+#news_area .inner_news{
+    display: flex;
+    justify-content: space-between;
+}
+.child_news{
+    width: 30%;
+}
+.child_news .admin_img{
+    position: relative;
+}
+.child_news .admin_img i{
+    position: absolute;
+    opacity: 0;
+    color: #fff;
+    font-size: 50px ;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%,-50%);
+}
+.child_news .admin_img::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(151,169,189,.0);
+}
+.child_news .fas {
+    font-family: fantasy;
+    font-weight: 100;
+}
+.child_news .admin_img:hover i{
+    opacity: 1;
+}
+.child_news .admin_img:hover::after {
+    background: rgba(151,169,189,.5);
 }
