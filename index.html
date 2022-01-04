@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/animated_circle.css">
+    <link rel="stylesheet" href="css/backTop.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Project Seven</title>
 </head>
 <body>
 <nav>
-    <div class="container inner_nav">
+    <div class="container inner_nav" id="top">
         <div class="logo">
             <h2> <span class="big">C</span>hill<span class="big">A</span>id</h2>
         </div>
         <div class="min_menu">
             <ul>
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="#top">Home</a></li>
                 <li><a href="#"><i class="fas fa-caret-down"></i>pages</a>
                     <ul>
-                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#Gallary">Gallery</a></li>
                         <li><a href="#">Full width</a></li>
                         <li><a href="#">Sidebar left</a></li>
                         <li><a href="#">Sidebar Right</a></li>
@@ -51,11 +52,13 @@
                 <li><a href="#about_area">About us</a></li>
                 <li><a href="#tem_area">Team</a></li>
                 <li><a href="#testimonial_area">testimonial</a></li>
-                <li><a href="#">Link Text</a></li>
+                <li><a href="#news_area">News</a></li>
+                <li><a href="#contuct_area">Contact</a></li>
             </ul>
         </div>
     </div>
 </nav>
+
 <!--=============================== header area ================================-->
 <header id="header-area">
     <div class="inner_header container">
@@ -67,7 +70,7 @@
     </div>
 </header>
 <!--=================================== Introblocks Area ===================================-->
-<section id="introblocks">
+<section id="introblocks" class="sticky_menu">
     <div class="inner_introblocks container">
         <div class="child_introblocks fast">
             <i class="fas fa-hand-rock"></i>
@@ -242,7 +245,7 @@
                 </div>
             </div>
             <div class="client_review">
-                
+                <i class="fas fa-quote-left"></i>
                 <p>Pulvinar tortor quis nisi in hac habitasse platea dictumst donec ac tellus fusce venenatis laoreet elit sed est tortor molestie in consectetuer fringilla suscipit ut odio ut ac.</p>
             </div>
         </div>
@@ -277,8 +280,8 @@
                     <img src="img/08.jpg" alt="admin">
                 </div>
                 <div class="admin_text">
-                    <a href="#" class="admin">Admin</a>
-                    <a href="#" class="comments"><i class="fas fa-comments"></i> Comments (3)</a>
+                    <a href="#" class="admin"><i class="fas fa-user"></i>Admin</a>
+                    <a href="#" class="comments"><i class="fas fa-comments"></i>Comments (3)</a>
                 </div>
             </div>
             <div class="news">
@@ -293,8 +296,8 @@
                     <img src="img/09.jpg" alt="admin">
                 </div>
                 <div class="admin_text">
-                    <a href="#" class="admin">Admin</a>
-                    <a href="#" class="comments"><i class="fas fa-comments"></i> Comments (6)</a>
+                    <a href="#" class="admin"><i class="fas fa-user"></i>Admin</a>
+                    <a href="#" class="comments"><i class="fas fa-comments"></i>Comments (6)</a>
                 </div>
             </div>
             <div class="news">
@@ -309,8 +312,8 @@
                     <img src="img/10.jpg" alt="admin">
                 </div>
                 <div class="admin_text">
-                    <a href="#" class="admin">Admin</a>
-                    <a href="#" class="comments"><i class="fas fa-comments"></i> Comments (10)</a>
+                    <a href="#" class="admin"><i class="fas fa-user"></i>Admin</a>
+                    <a href="#" class="comments"><i class="fas fa-comments"></i>Comments (10)</a>
                 </div>
             </div>
             <div class="news">
@@ -320,6 +323,127 @@
         </div>
     </div>
 </section>
+<!--======================================== Contuct area =================================-->
+<section id="contuct_area">
+    <div class="container">
+        <p class="short_heading">Enim eleifend dignissim bibendum</p>
+        <h2>Id Tristique Id Metus Nulla</h2>
+    </div>
+    <div class="container inner_contuct">
+        <div class="contuct_info">
+            <div class="child_info phone">
+                <div class="icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="info">
+                    <h5>Give Us A Call:</h5>
+                    <span>+880 1316 467 454</span>
+                </div>
+            </div>
+            <div class="child_info envelope">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h5>Send Us A Mail:</h5>
+                    <span>mdjubaerm16247@gmail.com</span>
+                </div>
+            </div>
+            <div class="child_info location">
+                <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="info">
+                    <h5>Come Visit Us:</h5>
+                    <span>Directions to <a href="https://goo.gl/maps/vSTr4HHTiT6cgJdJ8" target="_blank">our location</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="contuct_form">
+            <h6>Purus Nullam Arcu Integer</h6>
+            <p>Elementum nisi ac volutpat vestibulum enim mi tincidunt eros sed justo magna odio sed lacus ut non ante sit amet est luctus dictum ut dolor ac.</p>
+            <form action="https://formspree.io/f/xoqrvnwo" method="post">
+                <input type="text" name="Neme" placeholder="Name">
+                <input type="email" name="E-mail" placeholder="Email">
+                <input type="submit" value="submit" class="btn">
+            </form>
+        </div>
+    </div>
+</section>
+<!--===================================== Footer area ========================================-->
+<footer>
+    <div class="container inner_footer">
+        <div class="chaild_footer_fast">
+            <div class="logo">
+                <h2> <span class="big">C</span>hill<span class="big">A</span>id</h2>
+            </div>
+            <div class="footer_text">
+                <p>Scelerisque facilisis sapien turpis facilisis libero eu viverra purus dui ac leo sed vitae diam morbi sed nibh in eget dolor phasellus rhoncus odio morbi elit nunc id elit donec elementum <a href="">[…]</a></p>
+            </div>
+            <div class="social_area">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="chaild_footer_second">
+            <div class="footer_heading">
+                <h6>Volutpat Metus Nullam</h6>
+            </div>
+            <div class="footer_list">
+                <ul>
+                    <li><a href="#">Sagittis leo morbi quis</a></li>
+                    <li><a href="#">Nulla vehicula felis laoreet</a></li>
+                    <li><a href="#">Pulvinar proin et eros ac</a></li>
+                    <li><a href="#">Mi vulputate accumsan fusce</a></li>
+                    <li><a href="#">At massa in sed tortor sit amet</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="chaild_footer_thard">
+            <div class="footer_heading">
+                <h6>Tincidunt Ullamcorper</h6>
+            </div>
+            <div class="footer_gallary" id="Gallary">
+                <img src="img/11.jpg" alt="gallry image">
+                <img src="img/12.jpg" alt="gallry image">
+                <img src="img/13.jpg" alt="gallry image">
+                <img src="img/14.jpg" alt="gallry image">
+                <img src="img/15.jpg" alt="gallry image">
+                <img src="img/16.jpg" alt="gallry image">
+                <img src="img/17.jpg" alt="gallry image">
+                <img src="img/18.jpg" alt="gallry image">
+                <img src="img/19.jpg" alt="gallry image">
+            </div>
+        </div>
+        <div class="chaild_footer_forth">
+            <div class="footer_heading">
+                <h6>Fusce Vel Lectus Nunc</h6>
+            </div>
+            <div class="footer_notics">
+                <a href="#">Lacinia donec tortor lectus varius vel egestas a dictum in odio mauris metus.</a>
+                <span class="border">Friday, 6<sup>th</sup> April 2022</span>
+            </div>
+            <div class="footer_notics">
+                <a href="#">Turpis iaculis ac hendrerit vel pretium non magna sed non metus ut at nisi morbi.</a>
+                <span>Friday, 6<sup>th</sup> April 2022</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copy_area">
+    <div class="container">
+        <div class="left_area">
+            <p>Copyright &copy; 2022 - 2025 - All Rights Reserved - <a href="http://project-seven.netlify.app" target="_blank">project-seven.netlify.app</a></p>
+        </div>
+        <div class="right_area"><p>Template by OS Templates</p></div>
+    </div>
+</div>
+<a id='backTop'><i class="fas fa-chevron-up"></i></a>
 <!--`=========================== JS FILS ============================-->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -327,6 +451,8 @@
 <script src="js/respond.min.js"></script>
 <script src="js/selectivizr-min.js"></script>
 <script src="js/animated_circle.js"></script>
+<script src="j/waypoints.min.js"></script>
+<script src="js/backTop.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
