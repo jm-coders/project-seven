@@ -34,13 +34,17 @@ $(document).ready( function() {
             })
         }
     });
-    // $(".sticky_menu").waypoint(function(direction){
-    //     if (direction == "down"){
-    //         $("nav").addClass("sticky");
-    //     } else {
-    //         $("nav").removeClass("sticky");
-    //     }
-    // });
+    $(".sticky_menu").waypoint(function(direction){
+        if (direction == "down"){
+            $("nav").addClass("stickey");
+        } else {
+            $("nav").removeClass("stickey");
+        }
+    });
+    jQuery('.min_menu').meanmenu({
+        meanMenuContainer: '.mobile_menu',
+        meanScreenWidth: 1024,
+    });
     
     });
     
