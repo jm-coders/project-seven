@@ -103,7 +103,7 @@ nav .min_menu ul li{
     color: #97BDAB;
     position: relative;
 }
-nav .min_menu ul li.active a{
+nav .min_menu ul li a.active{
     color: #97BDAB;
 }
 nav .min_menu ul li a{
@@ -167,16 +167,54 @@ nav .min_menu ul ul ul{
     top: 0;
     left: 180px;
 }
-/* .mobile_menu{
+.mobile_menu{
+    display: none;
+}
+.mobile_menu span{
+    float: right;
+    font-size: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.mobile_menu .close{
+    float: right;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.overly{
     position: fixed;
-    top: 10px;
-    right: 10px;
-} */
+    transition:all 00.5s;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+}
+.overly_content{
+    position: relative;
+    top: 10%;
+}
+.overly a{
+    text-transform: uppercase;
+    display: block;
+    padding: 10px;
+    font-size: 24px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.overly a.active{
+    background: rgb(158, 148, 128);
+}
+.overly a:first-child{
+    border-top: 1px solid #fff;
+}
 .stickey {
     position: fixed;
     width: 100%;
     top: 0;
-    background: red;
     left: 0;
     z-index: 99999;
 }
@@ -197,6 +235,7 @@ nav .min_menu ul ul ul{
     color: #fff;
     overflow: hidden;
     height: 110vh;
+    max-height: 600px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -233,14 +272,14 @@ nav .min_menu ul ul ul{
 /*================================ Introblocks area =================================*/
 #introblocks{
     width: 100%;
-    height: 250px;
-    position: relative;
+    height: auto;
     margin: 0;
     padding: 0;
 }
 .inner_introblocks{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: -80px;
 
 }
@@ -253,6 +292,7 @@ nav .min_menu ul ul ul{
     box-shadow: 0px 0px 15px rgb(0, 0, 0,.3);
     color: #FFF;
     transition: 00.5s;
+    display: block;
 }
 .inner_introblocks .child_introblocks:hover{
     background: #FFF;
@@ -268,6 +308,7 @@ nav .min_menu ul ul ul{
     padding-top: 19px;
     transition: all 00.5s;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 .inner_introblocks .child_introblocks p{
     font-size: 14px;
@@ -323,6 +364,7 @@ nav .min_menu ul ul ul{
 .inner_blogs{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .child_blogs{
     width: 47.5%;
@@ -423,7 +465,34 @@ h4 {
     font-weight: 400;
     margin: 0;
 }
+svg.radial-progress {
+    height: auto;
+    width: 230px;
+    padding: 1em;
+    transform: rotate(-90deg);
+    width: 100%;
+}
 
+svg.radial-progress circle {
+    fill: rgba(0, 0, 0, 0);
+    stroke: #000;
+    stroke-dashoffset: 219.91148575129;
+    stroke-width: 10;
+}
+
+svg.radial-progress circle.incomplete {
+    opacity: 0.25;
+}
+
+svg.radial-progress circle.complete {
+    stroke-dasharray: 219.91148575129;
+}
+
+svg.radial-progress text {
+    fill: #000;
+    text-anchor: middle;
+    font-size: 8px;
+}
 .container .box svg.radial-progress circle {
     stroke-width: 4;
     stroke: #97A9BD;
@@ -436,6 +505,7 @@ h4 {
 .inner_tem{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .child_tem{
     width: 30%;
@@ -550,6 +620,7 @@ h4 {
 }
 #news_area .inner_news{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .child_news{
@@ -601,14 +672,16 @@ h4 {
     display: block;
     font-size: 12px;
 }
-.admin_text a i{
-    margin: 0 10px;
+.admin_text a i {
+    margin: 0 10px 0 0;
 }
 .admin{
     float: left;
+    padding-left: 10px;
 }
-.comments{
+.comments {
     float: right;
+    padding-right: 10px;
 }
 .news{
     padding: 15px 0 15px 15px;
@@ -637,6 +710,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .inner_contuct{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .contuct_info{
@@ -755,6 +829,7 @@ footer{
 .inner_footer{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .chaild_footer_fast{
     width: 23%;
@@ -916,3 +991,22 @@ footer{
     transition: all 00.5s;
     transform: translate(-50%,-50%);
 }
+/*Main stylesheet for Backtop jQuery Plugin */
+#backTop{
+    width:35px;
+    height:35px;
+    padding:10px;
+    border-radius:4px;
+    text-indent:-9999px;
+    cursor:pointer;
+    z-index:999999999;
+	display:none;
+	box-sizing:content-box;
+	-webkit-box-sizing:content-box;
+}
+#backTop.white{
+     background:url(../img/uparr-48-b.png) no-repeat center center rgba(255,255,255,0.8);
+    border:1px solid #ccc;
+}
+
+
